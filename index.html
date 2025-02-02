@@ -1,71 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vahuki</title>
-    <style>
-        body{
-            margin: 0 auto;
-            width: 700px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Văn Hữu Kiên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-        }
-        header{
-            background-color: rgb(166, 236, 236);
-            padding-top: 5px;
-        }
-        h1,p{
-            margin-left: 10px;
-        }
-        .main{
-            display: flex;
-            background-color: beige;
-        }
-        .inf{
-            width: 450px;
-        }
-        table{
-            padding: 0px;
-            width: 300px;
-            margin: 30px 15px;
-        }
-        tr,td{
-            padding: 10px;
-        }
-        img{
-            width: 250px;
-        }
-        hr{
-            margin: 0;
-        }
-    </style>
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header-contact{
+        color: black;
+    }
+
+    .header-image {
+      flex: 1;
+      text-align: left;
+    }
+
+    .avatar {
+      width: 170px;
+      height: auto;
+      border-radius: 30%;
+      object-fit: cover;
+    }
+
+    .header-content {
+      flex: 2;
+    }
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      section {
+        margin-bottom: 20px;
+      }
+  
+      h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      ul li {
+        background: #fdfbfb;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      .contact {
+        text-align: center;
+        margin-top: 20px;
+      }
+  
+      .contact a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: #333;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+  
+      .contact a:hover {
+        background: #e03232;
+      }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>About me.</h1>
-        <p>Hello everyone, my name is Huu Kien. Currently I am studying Front-End Development.</p>
-        <hr>
-    </header>
-    <div class="main">
-        <div class="img">
-            <img width="100%" height="100%" src="/huki.jpg" alt="">
-        </div>
-        <div class="inf">
-            <table>
-                <tr>
-                    <td style="font-weight: bold;">Name:</td>
-                    <td>Van Huu Kien</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Class:</td>
-                    <td>CGDN-C0125L1-WF101</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Contact:</td>
-                    <td>kienhuu975@gmail.com</td>
-                </tr>
-            </table>
-        </div>  
+  <header>
+    <div class="header-container">
+      <div class="header-image">
+        <img src="/huki.jpg" alt="Ảnh đại diện" class="avatar">
+      </div>
+      <div class="header-content">
+        <h1>Văn Hữu Kiên</h1>
+        <p>Front-End Developer</p>
+        <ul class="header-contact">
+          <li>Email: kienhuu975@gmail.com</li>
+          <li>GitHub: github.com/Vahuki</li>
+          <li>Facebook: facebook.com/vahuki</li>
+        </ul>
+      </div>
     </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>Giới thiệu</h2>
+      <p>Mình là Hữu Kiên, một học viên lập trình Front-End với niềm đam mê tạo ra các trang web đẹp và tối ưu trải nghiệm người dùng.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Kỹ năng</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Kinh nghiệm</h2>
+      <ul>
+        <li>2024 - Hiện tại: Học viên Codegym</li>
+        <li>2022 - 2024: Sinh viên Đại Học Duy Tân</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Liên hệ</h2>
+      <div class="contact">
+        <a href="mailto:kienhuu975@gmail.com">Email</a>
+        <a href="https://github.com/Vahuki" target="_blank">GitHub</a>
+        <a href="https://www.facebook.com/vahuki" target="_blank">Facebook</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
