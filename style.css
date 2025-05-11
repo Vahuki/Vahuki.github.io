@@ -207,7 +207,13 @@ footer p {
   }
   .opaciti-main{
     opacity: 0.25;
+    pointer-events: none; /* Không cho click, vuốt, v.v. */
+    user-select: none; /* Không cho bôi chọn văn bản */
   }
+  .no-scroll {
+  overflow: hidden;
+  }
+
   .open{
         display: flex;
         flex-direction: column;
