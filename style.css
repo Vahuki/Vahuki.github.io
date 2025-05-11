@@ -51,7 +51,9 @@ header {
   color: #4f46e5;
   font-size: 46px;
 }
-
+.navbarMobile{
+  display: none;
+}
 nav a {
   font-size: 24px;
   font-weight: 500;
@@ -197,6 +199,40 @@ footer p {
   color: #888;
 }
 @media screen and (max-width: 768px) {
+  .header-content {
+    padding: 0;
+  }
+  header nav{
+    display: none;
+  }
+  .opaciti-main{
+    opacity: 0.25;
+  }
+  .open{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 45px;
+        position: absolute;
+        right: 0;
+        top: 116px;
+        height: max-content;
+  }
+  .open a{
+    border-bottom: 1px solid;
+    font-size: 30px;
+    color: #000000;
+    transition: color 0.3s;
+  }
+  
+  .navbarMobile{
+    display: block;
+  }
+  .navbarMobile i {
+    font-size: 40px;
+    margin: 10px;
+  }
+  
   .skills {
     grid-template-columns: 1fr 1fr;
   }
