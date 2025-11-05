@@ -84,13 +84,13 @@ section {
 }
 
 .about img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-  display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.15);
+  object-fit: cover;      /* cắt vừa khung */
+  object-position: center;/* căn giữa hình */
+  border-radius: 45%;     /* bo góc */
+  display: block;         /* bỏ khoảng trống dưới ảnh */
+  height: auto;           /* giữ tỉ lệ ảnh */
+  width: 300px;         /* kích thước cố định */
+  margin: 0 auto 20px;   /* căn giữa và cách đoạn text */
 }
 
 .about p {
